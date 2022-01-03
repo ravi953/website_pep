@@ -1,0 +1,88 @@
+/* pure ke pure html tag ke ander hi ek type ka font ho gya neeche wali styling knre pr  */
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header h1{
+    font-weight: lighter;
+}
+
+/* yha hm padhenge about flex as we know ki hmare content ek ke neeche ek hn to hme unhe side by side krna h so we used display flex property. */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin:0rem 3rem;
+
+}
+
+/* ye list-style: none; hmne use kiya so that hmare list item me ke bullet points hatt jae  */
+
+/* unit conversion 1rem = 16px hota h...here we used unit in rem  */
+
+li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav ko hmesa width deni parti h kyunki iske ander jo list item h wo ek dusre me chipka rhta h jo hmlog usko side by side me rkhe isiliye isko ek width diye and then jsutify content ka use kiye aur tb jaake ul ke ander jo stylig kiye hn (just uper me hi) wo kaam kiya. */
+nav{
+    width: 22rem ;
+    position: relative;
+    top: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* now after all this we can see that jo mere nav bar ke elements the wo ek hi line me nhi the with DEV101 ke so hm ab seekhenge positioning ke baare me . we have written about it in nav tag as shown above . then we use top/bottom ye sb to move them */
+
+.showcase{
+    width: 98vw;
+    margin: 1rem;
+}
+
+article{
+    display: flex;
+}
+/* yha text-align feature ka use kr ke phatt se sb kuch ko centre me laa skte hn  */
+.container{
+    text-align: center;
+    margin: 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+footer{
+    /* ek imp note jb tk display flex nhi rhega tb tk justify content kaam nhi krega  */
+    background-color: black;
+    /* display: flex;
+    justify-content: center; */
+    /* text-align: center; */
+    color: white;
+    font-weight: lighter;
+    height: 2.5rem;
+    font-size: 2rem;
+    /* align items center jo h wo hmara jo text h na usko vertically center me le aata h ye ek important point h */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer p{
+    font-size: 1.5rem;
+}
+/* why this is working separately? */
+
+/* lets understand the power of hover iske liye tmhe a likh kr uske baaju me : ka sign de do aur bas usse related saare properties list out ho jaenge usme hover ko utha lo aur kaam chalu kr do   */
+a:hover{
+    color: red;
+}
